@@ -13,4 +13,18 @@ var winCount = 0;
 var LossCount = 0;
 var guessesLeft = 9;
 
-alert("test");
+// functions
+
+function GameStart () {
+
+    selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
+    console.log(selectedWord);
+}
+ 
+
+
+
+
+// call functions
+
+GameStart();
