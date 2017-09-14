@@ -18,7 +18,30 @@ var guessesLeft = 9;
 function GameStart () {
 
     selectedWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
+    lettersInWord = selectedWord.split("");
+    numBlanks = lettersInWord.length;
+
+    // reset area
+
+    guessesLeft = 9;
+    wrongLetters = [];
+    blanksAndSuccesses = [];
+
+    // Associate right or wrong letters with blanks
+
+    for (var i=0; i < numBlanks; i++){
+        blanksAndSuccesses.push("_");
+    }
+
+
+
+    // test area
+
     console.log(selectedWord);
+    console.log(lettersInWord);
+    console.log(numBlanks);
+    console.log(blanksAndSuccesses);
+
 }
  
 
