@@ -33,7 +33,9 @@ function GameStart () {
         blanksAndSuccesses.push("_");
     }
 
+    // html area
 
+    document.getElementById("wordToGuess").innerHTML = blanksAndSuccesses.join(" ");
 
     // test area
 
